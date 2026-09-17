@@ -20,5 +20,5 @@ jobs:
 
       - name: Build & Push Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/myshop-react:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/myshop-react:latest ./myshop-premium
           docker push ${{ secrets.DOCKER_USERNAME }}/myshop-react:latest
